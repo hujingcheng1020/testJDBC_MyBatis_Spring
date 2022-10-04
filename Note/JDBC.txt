@@ -1,0 +1,35 @@
+数据库（DB）-->DataBase  存储数据的仓库
+数据库管理系统（DataBase Management System）-->DBMS  管理数据库的大型软件
+SQL（Structured Query Language）  结构化查询语言；操作关系型数据库的编程语言；
+                                定义操作所有关系型数据库的统一标准
+
+MySQL:数据库系统管理软件之一
+DDL
+Show databases	显示数据库
+Create database (if not exists) +name	创建数据库
+Drop database (if exists) +name	删除数据库
+Use +name	使用数据库
+
+Show tables	显示数据表
+Desc +name	查询某数据表结构信息
+Create table +name(
+                    dataName1   dataType，
+                    dataName1   dataType，
+                    ……..
+                    );	创建表
+Drop table (if exists)+name	删除表
+Alter table +name rename to +newName	修改表名
+Alter table +name add colName dataType	添加一列
+Alter table +name modify colName newDataType	修改数据类型
+Alter table +name change colName newColName new DataType		修改列名和数据类型
+Alter table +name drop colName		删除列
+
+DML
+Select * from +name		查询表格数据
+Insert into +name(colName1,colName2,…) values(data1,data2,…)		指定列添加数据
+Updata +name set colName1=data1,colName2=data2,…[where judgmentConditions]	修改数据
+Delete from +name [where judgmentConditions]		删除数据
+
+JDBC（Java Database Connectivity）：
+用Java语言操作关系型数据库的一套API（应用程序界面），Java数据库连接
+定义了一套可以操作不同关系型数据库的Java接口
