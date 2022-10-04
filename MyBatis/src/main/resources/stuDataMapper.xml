@@ -4,8 +4,8 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!--namespace:名称空间-->
-
 <mapper namespace="test">
+<!--    返回类型-->
     <select id="selectAll" resultType="com.hujingcheng.testStuData">
         Select * from studata;
 --         update stuData set money=50 where name ='李四';
