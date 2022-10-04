@@ -23,6 +23,7 @@ public class MyBatis {
         List<testStuData> objects = sqlSession.selectList("test.selectAll");
         System.out.println(objects);
 
+
         //4.释放资源
         sqlSession.close();
     }

@@ -19,6 +19,7 @@ public class Demo_JDBC {
        //  Updata +name set colName1=data1,colName2=data2,…[where judgmentConditions]	修改数据
         String sql = "update stuData set money=50 where name ='李四'";
 
+
         //4.获取sql执行对象
         Statement stmt = conn.createStatement();
 
